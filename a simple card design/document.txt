@@ -1,0 +1,10 @@
+Q - How to organize the files and folders to see the tailwind css styling effect ?
+
+* There are for way to use this i.e (i) Tailwind CLI (ii) Using PostCSS (iii) Framework guides (iv) Play cdn (Docoument of these ways (how to use is found in the site : https://tailwindcss.com/docs/installation )).
+* I prefer Tailwind CLI
+* The steps to use Tailwind CLI is
+(i) Create a folder and insiside that create anather two folder (distribution and src (prefered))
+(ii) Inside distributionfolder create index.html file
+(iii) Inside src folder create input.css file where we mention @tailwind base; @tailwind component; and @tailwind utilities
+(iv) Type command on terminal - npx tailwindcss init : It generate a JS file named as tailwind.config.js where we export the relative path of the html files which are going to be display in browser.
+(v) Then type command npx tailwindcss -i ./distribution/input.css -o ./src/style.css (--watch) and open html page tosee the styling effect of the page.
